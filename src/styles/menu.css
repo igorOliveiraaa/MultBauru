@@ -97,3 +97,22 @@
         width: 100%;
     }
 }
+
+.catalog-intro {
+    margin: 10px 0;
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: center;
+    color: #555;
+}
+
+.catalog-link {
+    color: #5cc4b9;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.catalog-link:hover {
+    text-decoration: underline;
+    color: #554a9a;
+}
