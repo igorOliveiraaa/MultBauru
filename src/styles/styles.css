@@ -6,15 +6,15 @@
 @import url('footer.css');
 
 :root {
-    --color-primary-1: #ffffff; /* Branco */
-    --color-primary-2: #f0f0f0; /* Preto claro */
-    --color-primary-3: #5cc4b9; /* Azul claro */
-    --color-primary-4: #554a9a; /* Roxo */
-    --color-primary-5: #5cc4b9; /* Azul claro para botões */
-    --color-primary-6: #554a9a; /* Roxo para títulos */
+    --color-primary-1: #ffffff; 
+    --color-primary-2: #f0f0f0; 
+    --color-primary-3: #5cc4b9; 
+    --color-primary-4: #554a9a; 
+    --color-primary-5: #5cc4b9; 
+    --color-primary-6: #554a9a; 
 
-    --color-neutral-0: #ffffff; /* Fundo branco */
-    --color-neutral-1: #333333; /* Cinza escuro para textos */
+    --color-neutral-0: #ffffff; 
+    --color-neutral-1: #333333; 
 }
 
 * {
@@ -122,116 +122,107 @@ section {
     transform: rotate(20deg); 
 }
 
-/* Seção de Clientes */
 #clientes {
     padding: 40px 8%;
-    background-color: var(--color-primary-1); /* Fundo branco */
+    background-color: var(--color-primary-1);
 }
 
 #clientes .section-subtitle {
     font-size: 2rem;
-    color: var(--color-primary-6); /* Roxo */
+    color: var(--color-primary-6); 
     margin-bottom: 30px;
-    text-align: left; /* Alinha o título à esquerda */
+    text-align: left; 
 }
 
-/* Contêiner de clientes */
 #clients {
-    display: grid; /* Usando CSS Grid */
-    grid-template-columns: repeat(5, 1fr); /* 5 colunas no desktop */
-    gap: 20px; /* Espaçamento entre os quadrados */
+    display: grid; 
+    grid-template-columns: repeat(5, 1fr); 
+    gap: 20px; 
     justify-content: center;
     margin-top: 20px;
 }
 
-/* Cada cliente */
 .client {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-color: var(--color-neutral-0); /* Fundo branco */
+    background-color: var(--color-neutral-0); 
     border-radius: 12px;
     padding: 20px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
     transition: transform 0.3s ease-in-out;
 }
 
 .client:hover {
-    transform: scale(1.05); /* Zoom ao passar o mouse */
+    transform: scale(1.05); 
 }
 
-/* Logo do cliente */
 .client-logo {
-    max-width: 100%; /* Garante que o logo não ultrapasse os limites */
+    max-width: 100%; 
     height: auto;
     margin-bottom: 10px;
-    border-radius: 8px; /* Bordas arredondadas */
+    border-radius: 8px; 
 }
 
-/* Nome do cliente */
 .client-name {
     font-size: 1.1rem;
     font-weight: 600;
-    color: #333; /* Cinza escuro */
+    color: #333; 
 }
 
-/* Responsividade para tablets */
 @media screen and (max-width: 1170px) {
     #clients {
-        grid-template-columns: repeat(3, 1fr); /* 3 colunas em tablets */
+        grid-template-columns: repeat(3, 1fr); 
     }
 }
 
-/* Responsividade para celulares */
 @media screen and (max-width: 768px) {
     #clients {
-        grid-template-columns: repeat(2, 1fr); /* 2 colunas em celulares */
+        grid-template-columns: repeat(2, 1fr); 
     }
 }
 
-/* Responsividade para telas muito pequenas */
 @media screen and (max-width: 450px) {
     #clients {
-        grid-template-columns: 1fr; /* 1 coluna em telas muito pequenas */
+        grid-template-columns: 1fr; 
     }
 }
 
 #contato {
-    padding: 40px 8%; /* Espaçamento interno */
-    text-align: left; /* Texto alinhado à esquerda */
+    padding: 40px 8%; 
+    text-align: left; 
 }
 
 #contato .section-title {
     font-size: 2rem;
-    margin-bottom: 20px; /* Espaço abaixo do título */
-    color: var(--color-primary-6); /* Roxo */
+    margin-bottom: 20px; 
+    color: var(--color-primary-6); 
 }
 
 #contato .description {
     font-size: 1.2rem;
-    margin-bottom: 20px; /* Espaço abaixo da descrição */
-    color: #555; /* Cinza suave */
-    line-height: 1.5; /* Aumenta o espaçamento entre linhas */
+    margin-bottom: 20px; 
+    color: #555; 
+    line-height: 1.5; 
 }
 
 .contact-info {
     display: flex;
     flex-direction: column;
-    gap: 16px; /* Espaçamento entre itens */
+    gap: 16px; 
 }
 
 .phone-number {
     font-size: 1.1rem;
-    color: #333; /* Cinza escuro */
+    color: #333; 
 }
 
 .phone-link {
-    color: var(--color-primary-5); /* Azul forte */
-    text-decoration: none; /* Remove o sublinhado */
+    color: var(--color-primary-5); 
     font-weight: bold;
 }
 
 .phone-link:hover {
-    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+    text-decoration: underline; 
 }

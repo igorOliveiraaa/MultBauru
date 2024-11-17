@@ -7,12 +7,12 @@
 }
 
 #dishes {
-    display: grid; /* Muda de flex para grid */
-    grid-template-columns: repeat(5, 1fr); /* 5 colunas no desktop */
-    gap: 24px; /* Espaço entre as categorias */
+    display: grid; 
+    grid-template-columns: repeat(5, 1fr); 
+    gap: 24px; 
     margin-top: 32px;
     width: 100%;
-    padding: 0 20px; /* Adiciona espaçamento lateral */
+    padding: 0 20px; 
 }
 
 .dish {
@@ -30,11 +30,11 @@
 }
 
 .dish:hover {
-    transform: scale(1.05); /* Zoom suave ao passar o mouse */
+    transform: scale(1.05); 
 }
 
 .dish img {
-    max-width: 100%; /* Garante que as imagens não ultrapassem os limites */
+    max-width: 100%; 
     height: auto;
     border-radius: 10px;
 }
@@ -51,55 +51,47 @@
     color: #555;
 }
 
-/* Responsividade para tablets */
 @media screen and (max-width: 1170px) {
     #dishes {
-        grid-template-columns: repeat(3, 1fr); /* 3 colunas em tablets */
+        grid-template-columns: repeat(3, 1fr); 
         align-items: center;
     }
 
-    /* Centraliza o título da categoria no tablet */
     .dish-title {
         text-align: center;
     }
 
-    /* Centraliza o título da seção em telas menores */
     #produtos .section-subtitle {
         text-align: center;
         width: 100%;
     }
 }
 
-/* Responsividade para celulares */
 @media screen and (max-width: 768px) {
     #dishes {
-        grid-template-columns: repeat(2, 1fr); /* 2 colunas em celulares */
+        grid-template-columns: repeat(2, 1fr); 
     }
 
-    /* Centraliza o título da categoria no celular */
     .dish-title {
         text-align: center;
     }
 
-    /* Centraliza o título da seção em telas pequenas */
     #produtos .section-subtitle {
         text-align: center;
         width: 100%;
     }
 }
 
-/* Responsividade para telas muito pequenas */
 @media screen and (max-width: 450px) {
     #dishes {
-        grid-template-columns: 1fr; /* 1 coluna em telas muito pequenas */
+        grid-template-columns: 1fr; 
     }
 
-    /* Centraliza o título da categoria em telas muito pequenas */
+
     .dish-title {
         text-align: center;
     }
 
-    /* Centraliza o título da seção em telas muito pequenas */
     #produtos .section-subtitle {
         text-align: center;
         width: 100%;
