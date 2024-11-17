@@ -1,0 +1,129 @@
+header {
+    width: 100%;
+    padding: 28px 8%;
+    position: sticky;
+    top: 0;
+    background-color: var(--color-primary-1);
+    z-index: 3;
+}
+
+/* Barra de navegação */
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* Logo */
+#nav_logo {
+    max-width: 200px; /* Ajusta o tamanho máximo do logo */
+    height: auto; /* Mantém a proporção */
+    display: block;
+}
+
+/* Lista de navegação */
+#nav_list {
+    display: flex;
+    list-style: none;
+    gap: 48px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #1d1d1dad;
+    font-weight: 600;
+}
+
+.nav-item.active a {
+    color: var(--color-neutral-1);
+    border-bottom: 3px solid var(--color-primary-4);
+}
+
+/* Botão do menu móvel */
+#mobile_btn {
+    display: none;
+    border: none;
+    background-color: transparent;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+#mobile_btn i {
+    color: var(--color-primary-6);
+}
+
+#mobile_btn:hover {
+    transform: scale(1.1); /* Efeito ao passar o mouse */
+}
+
+/* Menu móvel */
+#mobile_menu {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: var(--color-primary-1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+    padding: 16px 0;
+    transform: translateY(-100%); /* Esconde o menu inicialmente */
+    transition: transform 0.3s ease-in-out; /* Suaviza a exibição */
+}
+
+/* Menu móvel ativo */
+#mobile_menu.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(0); /* Mostra o menu ao ativar */
+}
+
+#mobile_nav_list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 12px 0;
+}
+
+#mobile_nav_list .nav-item {
+    list-style: none;
+    text-align: center;
+}
+
+#mobile_nav_list .nav-item a {
+    text-decoration: none;
+    color: var(--color-neutral-1);
+    font-weight: 600;
+}
+
+/* Responsividade para tablets */
+@media screen and (max-width: 1170px) {
+    #nav_list,
+    #navbar .btn-default {
+        display: none;
+    }
+
+    #mobile_btn {
+        display: block; /* Exibe o botão móvel */
+    }
+}
+
+/* Responsividade para telas menores (menu some e logo centralizado) */
+@media screen and (max-width: 768px) {
+    #navbar {
+        justify-content: center; /* Centraliza o conteúdo */
+        flex-direction: column; /* Empilha os elementos */
+    }
+
+    #nav_list, #mobile_btn, .btn-default {
+        display: none; /* Esconde o menu e botões */
+    }
+
+    #nav_logo {
+        max-width: 200px; /* Aumenta o tamanho do logo */
+        margin: 20px auto; /* Centraliza o logo no meio */
+    }
+}
