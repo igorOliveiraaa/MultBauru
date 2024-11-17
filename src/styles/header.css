@@ -33,11 +33,16 @@ header {
     text-decoration: none;
     color: #1d1d1dad;
     font-weight: 600;
+    transition: color 0.3s ease-in-out; /* Suave para hover */
+}
+
+.nav-item a:hover {
+    color: var(--color-primary-4); /* Muda para roxo no hover */
 }
 
 .nav-item.active a {
-    color: var(--color-neutral-1);
-    border-bottom: 3px solid var(--color-primary-4);
+    color: var(--color-primary-4); /* Mantém o item ativo roxo */
+    border-bottom: none; /* Remove a barra roxa */
 }
 
 /* Botão do menu móvel */

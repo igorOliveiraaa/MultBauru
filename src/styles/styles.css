@@ -196,3 +196,42 @@ section {
         grid-template-columns: 1fr; /* 1 coluna em telas muito pequenas */
     }
 }
+
+#contato {
+    padding: 40px 8%; /* Espaçamento interno */
+    text-align: left; /* Texto alinhado à esquerda */
+}
+
+#contato .section-title {
+    font-size: 2rem;
+    margin-bottom: 20px; /* Espaço abaixo do título */
+    color: var(--color-primary-6); /* Roxo */
+}
+
+#contato .description {
+    font-size: 1.2rem;
+    margin-bottom: 20px; /* Espaço abaixo da descrição */
+    color: #555; /* Cinza suave */
+    line-height: 1.5; /* Aumenta o espaçamento entre linhas */
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 16px; /* Espaçamento entre itens */
+}
+
+.phone-number {
+    font-size: 1.1rem;
+    color: #333; /* Cinza escuro */
+}
+
+.phone-link {
+    color: var(--color-primary-5); /* Azul forte */
+    text-decoration: none; /* Remove o sublinhado */
+    font-weight: bold;
+}
+
+.phone-link:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}

@@ -55,6 +55,18 @@
 @media screen and (max-width: 1170px) {
     #dishes {
         grid-template-columns: repeat(3, 1fr); /* 3 colunas em tablets */
+        align-items: center;
+    }
+
+    /* Centraliza o título da categoria no tablet */
+    .dish-title {
+        text-align: center;
+    }
+
+    /* Centraliza o título da seção em telas menores */
+    #produtos .section-subtitle {
+        text-align: center;
+        width: 100%;
     }
 }
 
@@ -63,11 +75,33 @@
     #dishes {
         grid-template-columns: repeat(2, 1fr); /* 2 colunas em celulares */
     }
+
+    /* Centraliza o título da categoria no celular */
+    .dish-title {
+        text-align: center;
+    }
+
+    /* Centraliza o título da seção em telas pequenas */
+    #produtos .section-subtitle {
+        text-align: center;
+        width: 100%;
+    }
 }
 
 /* Responsividade para telas muito pequenas */
 @media screen and (max-width: 450px) {
     #dishes {
         grid-template-columns: 1fr; /* 1 coluna em telas muito pequenas */
+    }
+
+    /* Centraliza o título da categoria em telas muito pequenas */
+    .dish-title {
+        text-align: center;
+    }
+
+    /* Centraliza o título da seção em telas muito pequenas */
+    #produtos .section-subtitle {
+        text-align: center;
+        width: 100%;
     }
 }
