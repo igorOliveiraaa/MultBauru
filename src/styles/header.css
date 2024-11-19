@@ -3,8 +3,11 @@ header {
     padding: 28px 8%;
     position: sticky;
     top: 0;
-    background-color: var(--color-primary-1);
+    background-color: rgba(255, 255, 255, 0.6); /* Fundo branco translúcido */
+    backdrop-filter: blur(10px); /* Efeito de desfoque */
+    -webkit-backdrop-filter: blur(10px); /* Suporte para navegadores baseados no WebKit */
     z-index: 3;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Linha sutil no rodapé do header */
 }
 
 #navbar {

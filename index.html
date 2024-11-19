@@ -137,8 +137,11 @@
       <section id="produtos">
         <h3 class="section-subtitle">Nossos Produtos e Serviços</h3>
         <p class="catalog-intro">
-          <strong>Clique aqui ➡️ <a href="./src/catalogo/CatalogoMult.pdf" class="catalog-link" download>CATÁLOGO DIGTAL MULT 2025</a></strong> e conheça alguns dos nossos produtos. Nosso catálogo apresenta uma amostra, mas contamos com muitas outras opções para atender às suas necessidades!
-      </p>
+          <strong>Clique aqui ➡️ <a href="./src/catalogo/CatalogoMult.pdf" class="catalog-link" download>CATÁLOGO DIGTAL MULT 2025</a></strong> e conheça alguns dos nossos produtos.
+        </p>
+      <p class="catalog-intro">
+        Nosso catálogo apresenta uma amostra, mas contamos com muitas outras opções para atender às suas necessidades!
+    </p>
         <div id="dishes">
           <div class="dish">
             <img src="./src/img/BannerMult.png" class="dish-image" alt="Equipamentos Domésticos" />
@@ -319,12 +322,10 @@
     updateTimer();
 }
 
-// Fechar o card
 document.getElementById("close-promo").addEventListener("click", () => {
     document.getElementById("promo-card").style.display = "none";
 });
 
-// Inicia o cronômetro ao carregar
 window.onload = startWeeklyTimer;
     </script>
   </body>
